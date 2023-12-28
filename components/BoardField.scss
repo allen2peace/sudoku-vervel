@@ -1,0 +1,15 @@
+.field {
+  position: relative;
+  border: 1px solid grey;
+  width: 25px;
+  height: 25px;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.field:first-child {
+  border-left: 3px solid darkblue;
+}
+.field:nth-child(3n) {
+  border-right: 3px solid darkblue;
+}
