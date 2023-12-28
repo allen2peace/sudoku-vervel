@@ -84,11 +84,11 @@ export function App() {
   return (
     <>
       <div className="container">
-        <h1 className="header">Sudoku</h1>
+        <h1 className="header">Sudoku Game</h1>
         <div className="difficultyLevelAndTimerContainer">
           <div className="difficultyLevel">
             <label>Difficulty level: </label>
-            <select
+            <select className="select"
               onChange={(e) => {
                 handleChangeDifficulty(e.target.value);
               }}

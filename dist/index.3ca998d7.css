@@ -1,0 +1,316 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap";
+.header {
+  letter-spacing: .2em;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+@media (min-width: 720px) {
+  .header {
+    font-size: 50px;
+  }
+}
+
+.select {
+  background-color: #f7ecdf;
+}
+
+.container {
+  background-color: #faebd7;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  inset: 0;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+  color: #000;
+}
+
+.modalIcon {
+  color: #fff;
+  width: 70px;
+  height: 70px;
+}
+
+.difficultyLevelAndTimerContainer {
+  width: 300px;
+  justify-content: space-between;
+  display: flex;
+}
+
+@media (min-width: 720px) {
+  .difficultyLevelAndTimerContainer {
+    width: 500px;
+  }
+}
+
+.difficultyLevel {
+  align-items: center;
+  font-family: Roboto;
+  font-size: 14px;
+  display: flex;
+}
+
+@media (min-width: 720px) {
+  .difficultyLevel {
+    font-size: 20px;
+  }
+}
+
+select {
+  text-align: center;
+  border: none;
+  outline-style: none;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+@media (min-width: 720px) {
+  select {
+    font-size: 20px;
+  }
+}
+
+table {
+  width: 300px;
+  height: 300px;
+  border-spacing: 0;
+  margin-top: 10px;
+}
+
+@media (min-width: 720px) {
+  table {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+@media (min-width: 720px) {
+  .board {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.overlay {
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  background: #000000e6;
+  margin-top: 10px;
+  position: fixed;
+}
+
+@media (min-width: 720px) {
+  .overlay {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.gameOverModal {
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  z-index: 2;
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 720px) {
+  .gameOverModal {
+    width: 400px;
+    height: 150px;
+    padding: 20px;
+  }
+}
+
+.gameOverText {
+  letter-spacing: .1em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+@media (min-width: 720px) {
+  .gameOverText {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+}
+
+.gameOverTimeResult {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+@media (min-width: 720px) {
+  .gameOverTimeResult {
+    font-size: 20px;
+  }
+}
+
+.newGameBtn {
+  width: 30%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-top: 6px;
+  padding: 5px;
+  font-family: Roboto;
+  font-size: 10px;
+}
+
+@media (min-width: 720px) {
+  .newGameBtn {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+.timeResult {
+  font-weight: 400;
+}
+
+.pauseModal {
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+  background: #000000e6;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+  position: fixed;
+}
+
+@media (min-width: 720px) {
+  .pauseModal {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.playButton {
+  width: 80px;
+  height: 80px;
+  background-color: #0000;
+  border: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.row:first-child .field, .row:nth-child(3n) {
+  border-top: 3px solid #990404;
+}
+
+.row:nth-child(3n) .field {
+  border-bottom: 3px solid #990404;
+}
+
+.uneditableField {
+  width: 92%;
+  height: 97%;
+  text-align: center;
+  cursor: pointer;
+  caret-color: #0000;
+  background-color: #0000;
+  border: none;
+  outline-style: none;
+  font-size: 19px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.editableField {
+  width: 92%;
+  height: 97%;
+  text-align: center;
+  background-color: #0000;
+  border: none;
+  outline-style: none;
+  font-size: 19px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.field {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #8bd0eb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  position: relative;
+}
+
+.field:first-child {
+  border-left: 3px solid #990404;
+}
+
+.field:nth-child(3n) {
+  border-right: 3px solid #990404;
+}
+
+.stopBtn, .playBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #0000;
+  border: none;
+  align-items: center;
+  display: flex;
+}
+
+.timer {
+  align-items: center;
+  font-family: Roboto;
+  font-size: 14px;
+  display: flex;
+}
+
+@media (min-width: 720px) {
+  .timer {
+    font-family: Roboto;
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=index.3ca998d7.css.map */

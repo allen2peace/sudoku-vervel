@@ -1,6 +1,6 @@
 .field {
   position: relative;
-  border: 1px solid grey;
+  border: 1px solid rgb(139, 208, 235);
   width: 25px;
   height: 25px;
   font-size: 22px;
@@ -8,8 +8,8 @@
 }
 
 .field:first-child {
-  border-left: 3px solid darkblue;
+  border-left: 3px solid rgb(153, 4, 4);
 }
 .field:nth-child(3n) {
-  border-right: 3px solid darkblue;
+  border-right: 3px solid rgb(153, 4, 4);
 }
